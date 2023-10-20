@@ -1,0 +1,59 @@
+Infix expression: The expression of the form “a operator b” (a + b) i.e., when an operator is in-between every pair of operands.
+
+
+Postfix expression: The expression of the form “a b operator” (ab+) i.e., When every pair of operands is followed by an operator.
+
+Example:
+Input: A + B * C + D
+Output: ABC*+D+
+
+Input: ((A + B) – C * (D / E)) + F
+Output: AB+CDE/*-F+  
+
+Why postfix representation of the expression? 
+    The compiler scans the expression either from left to right or from right to left. 
+
+Consider the expression: a + b * c + d
+
+    * The compiler first scans the expression to evaluate the expression b * c, then again scans the expression to add a to it. 
+    * The result is then added to d after another scan. 
+
+The repeated scanning makes it very inefficient. Infix expressions are easily readable and solvable by humans.
+The computer cannot differentiate the operators and parenthesis easily so, it is better to convert the expression to postfix(or prefix) form before evaluation.
+
+The corresponding expression in postfix form is abc*+d+. The postfix expressions can be evaluated easily using a stack.
+
+How to convert an Infix expression to a Postfix expression?
+
+    To convert infix expression to postfix expression, use the stack data structure. Scan the infix expression from left to right. Whenever we get an operand, add it to the postfix expression and if we get an operator or parenthesis add it to the stack by maintaining their precedence.
+
+
+Step by step:
+    1) Scan the infix expression from left to right.
+    2) If the scanned character is an operand, put it in the postfix(String) expression. 
+    3) Otherwise, do the following
+        * If the precedence and associativity of the scanned operator are greater than the precedence and associativity of the operator in the stack [or the stack 
+          is empty or the stack contains a ‘(‘ ], then push it in the stack. [‘^‘ operator is right associative and other operators like ‘+‘,’–‘,’*‘ and ‘/‘ are 
+          left-associative].
+            * Check especially for a condition when the operator at the top of the stack and the scanned operator both are ‘^‘. In this condition, the precedence of 
+              the scanned operator is higher due to its right associativity. So it will be pushed into the operator stack. 
+            * In all the other cases when the top of the operator stack is the same as the scanned operator, then pop the operator from the stack because of 
+              left associativity due to which the scanned operator has less precedence.
+        * Else, Pop all the operators from the stack which are greater than or equal to in precedence than that of the scanned operator.
+            * After doing that Push the scanned operator to the stack. (If you encounter parenthesis while popping then stop there and push the scanned operator in
+                                                                                                                                                            the stack.) 
+    4) If the scanned character is a ‘(‘, push it to the stack. 
+    5) If the scanned character is a ‘)’, pop the stack and output it until a ‘(‘ is encountered, and discard both the parenthesis. 
+
+
+
+
+
+
+
+
+
+
+
+
+

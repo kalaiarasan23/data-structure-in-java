@@ -1,0 +1,156 @@
+Write a  program to sort the given array according to frequency of elements.
+
+Example:
+input : {2,3,2,4,5,12,2,3,3,3,12}
+output : {3,3,3,3,2,2,2,12,12,4,5}
+
+input :{0,2,1,-1,1,2,0,4,-1,4}
+output:{-1,-1,0,0,1,1,2,2,4,4}
+
+input :{4,6,8,2,5,7,9}
+output:{2,4,5,6,7,8,9}
+
+Program 2
+Given an input string and a dictionary of words, find out if the input string can be segmented int a space-separated sequence of dictionary words. 
+Consider the following dictionary 
+{i, like, sam, sung, samsung, mobile, ice, cream, icecream, man, go, mango}
+
+Input : ilike
+Output: Yes "i like"
+
+Input : ilikesamsung
+output: Yes "I like samsung i like sam sung"
+
+
+
+Program 3
+Write a program to find the dulicate numbers in an array and their occurrences. Store the duplicate numbers in a separate array and print the output.
+
+Input : [1,2,4,5,2,1,5,2,10,22,5]
+Output: 
+1 -> 2
+2 -> 3
+5 -> 3
+
+
+program 4
+For a given number N, find the next immediate palindrome
+Input : 808
+output: 818
+
+input : 2133
+output: 2222
+
+
+program 5
+Given an expression string exp, write a program to examine whether the pairs and the orders of "{" , "}" , "[" , "]" , "(" , ")" are correct in exp
+
+Input : e= "[()]{}{[()()]()}"
+Output: Balanced
+
+Input : e="[(])"
+Output: Not Balanced
+
+
+Program 6:
+Write a program to remove a fragment that occur in all string, where a fragment is 3 consecutive words. Note: If you are writing this program in JAVA don't use built-in functions like split(),indexof(),replace(), substring() etc present in String class.
+
+Example:
+input :
+s1= "Every morning I want to do exercise regularly"
+s2= "Every morning I want to do meditation without fail"
+s3= "It is important that i want to be happy always"
+
+Removed fragment = "I want to"
+Output:
+s1 = "Every morning do exercise regularly" 
+s2 = "Every morning do meditation without fail"
+s3 = "It is important that be happy always"
+
+
+Pragram 7:
+Expand the given string - The input string contains string(s) followed by {n} denotes s repeating n times
+
+Input : l(o(v){2}){2}e
+Output: lovvovve
+
+Input : ((x){3}(y){2}z){2}
+Output: xxxyyzxxxyyz
+
+
+program 8:
+Remove unbalanced parentheses in a given expression.
+
+Input : ((abc)((de))
+Output: ((abc)(de))
+
+Input : (((ab)
+Output: (ab)
+
+
+program 9:
+Check whether a given mathematical expression is valid.
+
+Input : (a+b)(a*b)
+Output: Valid
+
+Input : (ab)(ab+)
+Output:invalid
+
+Input : ((a+b)
+Output: Invalid
+
+
+program 10:
+x pattern all the string length is odd
+eg 
+input : 12345
+
+Output:
+ 1   5
+  2 4
+   3
+  2 4 
+ 1   5
+
+Program 11:
+Given an array of random numbers, Push all the zero's to the end of the array.
+
+Expected the time complexity is o(n) and extra space is o(1).
+Input : [0,2,0,4,3]
+output: [2,4,3,0,0]
+
+input : [1,2,0,4,3,0,5,0]
+output: [1,2,4,3,5,0,0,0]
+
+input : [1,2,0,0,0,3,6]
+output: [1,2,3,6,0,0,0]
+
+program 12
+
+windowing
+two pointers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

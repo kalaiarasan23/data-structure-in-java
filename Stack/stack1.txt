@@ -1,0 +1,87 @@
+What is Stack?
+    * Stack is a linear data structure 
+    * particular order in which the operations are performed. 
+    * order may be LIFO(Last In First Out) or FILO(First In Last Out).
+  
+Real-life examples of a stack
+    * plates stacked over one another in the canteen.
+        The plate which is at the top is the first one to be removed, i.e. the plate which has been placed at the bottommost position remains in the stack for the longest period of time. So, it can be simply seen to follow LIFO(Last In First Out)/FILO(First In Last Out) order.
+
+Basic Operations on Stack
+    * push() to insert an element into the stack
+    * pop() to remove an element from the stack
+    * top() Returns the top element of the stack.
+    * isEmpty() returns true if stack is empty else false.
+    * size() returns the size of stack.
+
+Types of Stacks:
+    Fixed Size Stack: a fixed size stack has a fixed size and cannot grow or shrink dynamically. If the stack is full and an attempt is made to add an element to it, an overflow error occurs. If the stack is empty and an attempt is made to remove an element from it, an underflow error occurs.
+    
+    Dynamic Size Stack: A dynamic size stack can grow or shrink dynamically. When the stack is full, it automatically increases its size to accommodate the new element, and when the stack is empty, it decreases its size. This type of stack is implemented using a linked list, as it allows for easy resizing of the stack.
+
+
+There are several other variations of Stacks, including:
+    1) Infix to Postfix Stack: This type of stack is used to convert infix expressions to postfix expressions.
+    2) Expression Evaluation Stack: 
+    3) Recursion Stack: This type of stack is used to keep track of function calls in a computer program and to return control to the correct function when a function returns.
+    4)Memory Management Stack: This type of stack is used to store the values of the program counter and the values of the registers in a computer program, allowing the program to return to the previous state when a function returns.
+    5) Balanced Parenthesis Stack: This type of stack is used to check the balance of parentheses in an expression.
+    6) Undo-Redo Stack: This type of stack is used in computer programs to allow users to undo and redo actions.
+
+
+Application of Stack:
+    * Infix to Postfix /Prefix conversion
+    * Redo-undo features at many places like editors, photoshop.
+    * Forward and backward features in web browsers
+    * Stacks are also used to implement the undo/redo operation in text editor.
+    * Stack also helps in implementing function call in computers. The last called function is always completed first.
+
+*****imp * String reversal**** is also another application of stack. Here one by one each character gets inserted into the stack. So the first character of the string is on the bottom of the stack and the last element of a string is on the top of the stack.
+
+
+Stack can be implement by 
+    * Array
+    * Linked-List
+
+Advantages of array implementation:
+    * Easy to implement.
+    * Memory is saved as pointers are not involved.
+
+Disadvantages of array implementation:
+    * It is not dynamic i.e., it doesn’t grow and shrink depending on needs at runtime. [But in case of dynamic sized arrays like vector in C++, list in Python, ArrayList in Java, stacks can grow and shrink with array implementation as well].
+    * The total size of the stack must be defined beforehand.
+
+Advantages of Linked List implementation:
+    * The linked list implementation of a stack can grow and shrink according to the needs at runtime.
+    * It is used in many virtual machines like JVM.
+
+Disadvantages of Linked List implementation:
+    * Requires extra memory due to the involvement of pointers.
+    * Random accessing is not possible in stack.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
